@@ -28,6 +28,8 @@ increase project's minSdk version to at least 23.
 
 * [`start()`](#start)
 * [`stop()`](#stop)
+* [`addListener(...)`](#addlistener)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -37,12 +39,10 @@ increase project's minSdk version to at least 23.
 ### start()
 
 ```typescript
-start() => any
+start() => Promise<void>
 ```
 
 start the recording
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -50,13 +50,39 @@ start the recording
 ### stop()
 
 ```typescript
-stop() => any
+stop() => Promise<void>
 ```
 
 stop the recording
 
-**Returns:** <code>any</code>
+--------------------
+
+
+### addListener(...)
+
+```typescript
+addListener(eventName: 'screenRecordingStop', listenerFunc: (data: any) => {}) => Promise<PluginListenerHandle> & PluginListenerHandle
+```
+
+Callback to finish the recording and obtain the file.
+
+| Param              | Type                               |
+| ------------------ | ---------------------------------- |
+| **`eventName`**    | <code>"screenRecordingStop"</code> |
+| **`listenerFunc`** | <code>(data: any) =&gt; {}</code>  |
+
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### PluginListenerHandle
+
+| Prop         | Type                                      |
+| ------------ | ----------------------------------------- |
+| **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
 
 </docgen-api>
