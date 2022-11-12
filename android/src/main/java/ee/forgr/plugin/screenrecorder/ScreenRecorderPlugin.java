@@ -57,4 +57,16 @@ public class ScreenRecorderPlugin extends Plugin {
         call.resolve();
     }
 
+    @PluginMethod
+    public void pause(PluginCall call) {
+        recorder.pause();
+        call.resolve();
+    }
+
+    @PluginMethod
+    public void resume(PluginCall call) {
+        recorder.resume();
+        call.resolve();
+    }
+
 }

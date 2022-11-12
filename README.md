@@ -28,6 +28,8 @@ increase project's minSdk version to at least 23.
 
 * [`start()`](#start)
 * [`stop()`](#stop)
+* [`pause()`](#pause)
+* [`resume()`](#resume)
 * [`addListener(...)`](#addlistener)
 * [Interfaces](#interfaces)
 
@@ -54,6 +56,28 @@ stop() => Promise<void>
 ```
 
 stop the recording
+
+--------------------
+
+
+### pause()
+
+```typescript
+pause() => Promise<void>
+```
+
+pause the recording
+
+--------------------
+
+
+### resume()
+
+```typescript
+resume() => Promise<void>
+```
+
+resume the recording
 
 --------------------
 

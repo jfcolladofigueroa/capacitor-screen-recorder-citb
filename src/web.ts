@@ -11,6 +11,12 @@ export class ScreenRecorderWeb
   async stop(): Promise<void> {
       throw new Error("Method not implemented.");
   }
+  async pause(): Promise<void> {
+      throw new Error("Method not implemented.");
+  }
+  async resume(): Promise<void> {
+      throw new Error("Method not implemented.");
+  }
   // async addListener(eventName: 'screenRecordingStop', listenerFunc: (data: any) => {}) {
   //   throw new Error("Method not implemented.");
   // }

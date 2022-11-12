@@ -12,6 +12,16 @@ export interface ScreenRecorderPlugin {
    */
   stop(): Promise<void>;
   /**
+   * pause the recording
+   *
+   */
+  pause(): Promise<void>;
+  /**
+   * resume the recording
+   *
+   */
+  resume(): Promise<void>;
+  /**
    * Callback to finish the recording and obtain the file.
    *
    */
