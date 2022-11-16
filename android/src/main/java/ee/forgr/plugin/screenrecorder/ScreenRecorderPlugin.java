@@ -1,3 +1,4 @@
+import com.getcapacitor.Plugin;
 package ee.forgr.plugin.screenrecorder;
 
 import android.util.Log;
@@ -14,10 +15,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
-import dev.bmcreations.scrcast.ScrCast;
-import dev.bmcreations.scrcast.config.Options;
-import dev.bmcreations.scrcast.recorder.RecordingCallbacks;
-import dev.bmcreations.scrcast.recorder.RecordingState;
+import ee.forgr.plugin.screenrecorder.scrcast.ScrCast;
+import ee.forgr.plugin.screenrecorder.scrcast.config.Options;
+import ee.forgr.plugin.screenrecorder.scrcast.recorder.RecordingCallbacks;
+import ee.forgr.plugin.screenrecorder.scrcast.recorder.RecordingState;
 
 @CapacitorPlugin(name = "ScreenRecorder")
 public class ScreenRecorderPlugin extends Plugin {
