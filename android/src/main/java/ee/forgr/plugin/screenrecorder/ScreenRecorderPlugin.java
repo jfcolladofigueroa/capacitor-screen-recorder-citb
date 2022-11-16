@@ -7,7 +7,6 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 import com.getcapacitor.JSObject;
-import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
@@ -20,6 +19,7 @@ import ee.forgr.plugin.screenrecorder.scrcast.ScrCast;
 import ee.forgr.plugin.screenrecorder.scrcast.config.Options;
 import ee.forgr.plugin.screenrecorder.scrcast.recorder.RecordingCallbacks;
 import ee.forgr.plugin.screenrecorder.scrcast.recorder.RecordingState;
+
 
 @CapacitorPlugin(name = "ScreenRecorder")
 public class ScreenRecorderPlugin extends Plugin {
