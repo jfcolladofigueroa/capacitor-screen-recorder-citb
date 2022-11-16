@@ -1,5 +1,6 @@
-import com.getcapacitor.Plugin;
 package ee.forgr.plugin.screenrecorder;
+
+import com.getcapacitor.Plugin;
 
 import android.util.Log;
 
